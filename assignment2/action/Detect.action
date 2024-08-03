@@ -1,0 +1,10 @@
+#goal definition
+int32 tag_id
+---
+#result definition
+geometry_msgs/PoseStamped object_pose
+geometry_msgs/PoseStamped[] other_objects_pose
+int32[] other_objects_ids
+---
+#feedback definition
+string feedback

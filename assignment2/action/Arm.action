@@ -1,0 +1,12 @@
+#goal definition
+bool pick #it distinguish between pick and place
+geometry_msgs/PoseStamped object_pose
+geometry_msgs/PoseStamped[] other_objects_pose
+int32 object_id #I'm not sure is it needed or not
+int32[] other_objects_ids #I'm not sure is it needed or not
+---
+#result definition
+bool success
+---
+#feedback definition
+string feedback

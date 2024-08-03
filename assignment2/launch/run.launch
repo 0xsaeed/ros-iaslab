@@ -1,0 +1,19 @@
+<launch>
+    <arg name="DEBUG" default="True" />
+    <!-- Launch node 1 -->
+    <node pkg="tiago_iaslab_simulation" type="human_node" name="human_node" output="screen">
+    </node>
+
+    <!-- Launch node 2 -->
+    <node pkg="assignment2" type="node_a.py" name="main_node" output="screen">
+        <param name="DEBUG" value="$(arg DEBUG)" />
+    </node>
+
+    <!-- Launch node 3 -->
+    <node pkg="assignment2" type="node_b.py" name="detect_server" output="screen">
+    </node>
+
+    <!-- Launch node 3 -->
+    <node pkg="assignment2" type="node_c.py" name="arm_server" output="screen">
+    </node>
+</launch>

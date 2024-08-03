@@ -1,0 +1,8 @@
+#goal definition
+geometry_msgs/Pose pose_b
+---
+#result definition
+geometry_msgs/Point[] obstacles
+---
+#feedback definition
+string state
